@@ -14,7 +14,7 @@ body {
   width: calc(100% - 264px);
   margin: auto;
 }
-
+/* =============================== header==========================*/
 header {
   padding: 20px 0px 24px 0px;
   background-color: #f1f1f3;
@@ -86,6 +86,7 @@ header .header-section .authantication a:last-of-type {
   align-items: center;
 }
 
+/* =============================== hero==========================*/
 .Hero {
   padding: 150px 0px 50px 0px;
 }
@@ -196,10 +197,10 @@ p {
   font-weight: 500;
 }
 
+/*=================================images=========================*/
 .images {
   padding: 20px 0px 50px 0px;
 }
-
 .images .cards {
   display: flex;
   flex-wrap: nowrap;
@@ -210,15 +211,15 @@ p {
   gap: 2px;
   overflow-x: auto;
 }
-
 .images img {
-  width: calc((100% - 10px) / 6);
+  width: calc((100% - 12px) / 7);
   padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/*===============================photo=====================*/
 .photo .parent {
   position: relative;
   display: flex;
@@ -243,7 +244,7 @@ p {
   background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
 }
-
+/*=============================Benefits==========================*/
 .Benefits {
   padding: 50px 0px;
 }
@@ -341,6 +342,7 @@ p {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+/*==================================Courses=================================*/
 .Courses {
   padding: 50px 0px;
 }
@@ -423,7 +425,13 @@ p {
   gap: 10px;
 }
 
-.Courses .courses-section .courses-cards .Course-card .card-info .card-data span {
+.Courses
+  .courses-section
+  .courses-cards
+  .Course-card
+  .card-info
+  .card-data
+  span {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #4c4c4d;
   font-size: 16px;
@@ -434,7 +442,13 @@ p {
   padding: 10px 16px;
 }
 
-.Courses .courses-section .courses-cards .Course-card .card-info .card-name span {
+.Courses
+  .courses-section
+  .courses-cards
+  .Course-card
+  .card-info
+  .card-name
+  span {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #262626;
   font-size: 20px;
@@ -474,6 +488,7 @@ p {
   width: 100%;
 }
 
+/*===========================================Testimonials================================*/
 .Testimonials {
   padding: 50px 0px;
 }
@@ -587,6 +602,7 @@ p {
   color: #333;
 }
 
+/*====================================Pricing==================================*/
 .Pricing {
   padding: 50px 0px;
 }
@@ -686,7 +702,12 @@ p {
   justify-content: center;
 }
 
-.Pricing .pricing-section .pricing-cards .pricing-card .cost span:first-of-type {
+.Pricing
+  .pricing-section
+  .pricing-cards
+  .pricing-card
+  .cost
+  span:first-of-type {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #262626;
   font-size: 50px;
@@ -723,13 +744,26 @@ p {
   font-size: 20px;
 }
 
-.Pricing .pricing-section .pricing-cards .pricing-card .features .min-card .features-list {
+.Pricing
+  .pricing-section
+  .pricing-cards
+  .pricing-card
+  .features
+  .min-card
+  .features-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.Pricing .pricing-section .pricing-cards .pricing-card .features .min-card .features-list .feature {
+.Pricing
+  .pricing-section
+  .pricing-cards
+  .pricing-card
+  .features
+  .min-card
+  .features-list
+  .feature {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -738,7 +772,15 @@ p {
   border: 1px solid #f1f1f3;
 }
 
-.Pricing .pricing-section .pricing-cards .pricing-card .features .min-card .features-list .feature img {
+.Pricing
+  .pricing-section
+  .pricing-cards
+  .pricing-card
+  .features
+  .min-card
+  .features-list
+  .feature
+  img {
   width: 30px;
   height: 30px;
   border-radius: 6px;
@@ -746,7 +788,15 @@ p {
   padding: 6px;
 }
 
-.Pricing .pricing-section .pricing-cards .pricing-card .features .min-card .features-list .feature p {
+.Pricing
+  .pricing-section
+  .pricing-cards
+  .pricing-card
+  .features
+  .min-card
+  .features-list
+  .feature
+  p {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #4c4c4d;
   font-size: 10px;
@@ -767,6 +817,7 @@ p {
   text-decoration: none;
 }
 
+/*===============================footer=========================*/
 footer {
   background-color: #fff;
   padding: 100px 0px 30px 0px;
@@ -874,89 +925,309 @@ footer .footer-section .start-end .end nav a {
   display: flex;
   align-items: center;
 }
-
-@media screen and (min-width: 320px) and (max-width: 426px) {
+/*laptop*/
+@media screen and (max-width: 1025px) {
+  .container {
+    width: calc(100% - 25px);
+    margin: auto;
+  }
+  header .header-section .logo-links {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  header .header-section .logo-links nav {
+    gap: 15px;
+  }
+  .Hero .hero-section .hero-data .hero-info {
+    flex-wrap: nowrap;
+  }
+  .Hero .hero-data .hero-info h1 {
+    font-size: 35px;
+  }
+  .Hero .hero-data h2 {
+    font-size: 28px;
+  }
+  .Hero .hero-data .row1,
+  .row2 {
+    text-align: center;
+  }
+  .Hero .hero-section .hero-data .icon1 {
+    left: -20px;
+    top: -30px;
+  }
+  .Hero a {
+    font-size: 20px;
+  }
+  .Hero .hero-buttons {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   .images img {
-    width: calc((100% - 2px) / 2);
+    width: calc((100% - 8px) / 5);
+  }
+  .Benefits .Benefits-section .Benefits-cards .Benefit-card {
+    width: calc((100% - 20px) / 2);
+  }
+  .Courses
+    .courses-section
+    .courses-cards
+    .Course-card
+    .card-info
+    .card-name
+    span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .Testimonials .testimonials-cards .testimonial-card .card-info a {
+    width: fit-content;
+  }
+  .Pricing .pricing-section .pricing-cards {
+    padding: 20px;
+  }
+  .Pricing .pricing-section .pricing-cards .pricing-card {
+    padding: 30px 20px 20px 20px;
+  }
+  .Pricing
+    .pricing-section
+    .pricing-cards
+    .pricing-card
+    .features
+    .min-card
+    .features-list
+    .feature
+    p {
+    font-size: 12px;
+  }
+  footer .footer-section .start-end {
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .footer-section .start-end .start {
+    width: 100%;
+  }
+  footer .footer-section .start-end .end {
+    width: 100%;
+  }
+}
+/*tablet*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: auto;
+  }
+  header .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+  }
+  header .header-section .logo-links {
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+  header .header-section .logo-links nav {
+    gap: 15px;
   }
 
+  header .header-section .authantication {
+    align-self: flex-end;
+  }
+  .Hero .hero-section .hero-data .hero-info {
+    flex-wrap: nowrap;
+  }
+  .Hero .hero-data .hero-info h1 {
+    font-size: 30px;
+  }
+  .Hero .hero-data h2 {
+    font-size: 26px;
+  }
+  .Hero .hero-data .row1,
+  .row2 {
+    text-align: center;
+  }
+  .Hero .hero-section .hero-data .icon1 {
+    left: -20px;
+    top: -30px;
+  }
+  .Hero a {
+    font-size: 18px;
+  }
+  .Hero .hero-buttons {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .images img {
+    width: calc((100% - 6px) / 4);
+  }
+  .Benefits .Benefits-section .Benefits-cards .Benefit-card {
+    width: calc((100% - 20px) / 2);
+  }
+  .Courses .courses-section .courses-cards {
+    flex-direction: column;
+  }
+  .Courses .courses-section .courses-cards {
+    flex-direction: column;
+  }
+  .Courses .courses-section .courses-cards .Course-card {
+    width: 100%;
+  }
+  .Courses
+    .courses-section
+    .courses-cards
+    .Course-card
+    .card-info
+    .card-name
+    span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .Testimonials .testimonials-section .testimonials-cards {
+    flex-direction: column;
+  }
+  .Testimonials .testimonials-cards .testimonial-card {
+    width: 100%;
+  }
+  .Testimonials .testimonials-cards .testimonial-card .card-info a {
+    width: fit-content;
+  }
+  .Pricing .pricing-section .pricing-info {
+    flex-direction: column;
+  }
+  .Pricing .pricing-section .pricing-info .buttons {
+    align-self: flex-start;
+  }
+  .Pricing .pricing-section .pricing-cards {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .Pricing .pricing-section .pricing-cards .pricing-card {
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+  }
+  footer .footer-section .start-end {
+    flex-direction: column;
+  }
+  footer .footer-section .start-end .start {
+    width: 100%;
+  }
+  footer .footer-section .start-end .end {
+    width: 100%;
+  }
+}
+/*Mobail*/
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: auto;
+  }
   header .header-section .logo-links nav {
     display: none;
   }
-
   header .B-icon {
     display: inline;
   }
-
   header .header-section {
     flex-wrap: nowrap;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
-
   header .header-section .authantication {
     flex-wrap: nowrap;
     align-items: center;
   }
-
-  .Pricing .pricing-section .pricing-info {
-    flex-direction: column;
+  .Hero .hero-section .hero-data .hero-info {
+    flex-wrap: nowrap;
   }
-
-  .Pricing .pricing-section .pricing-cards {
-    flex-direction: column;
+  .Hero .hero-data .hero-info h1 {
+    font-size: 16px;
   }
-
-  .Testimonials .testimonials-section .testimonials-cards {
-    flex-direction: column;
+  .Hero .hero-data h2 {
+    font-size: 24px;
   }
-
-  .Courses .courses-section .courses-cards {
-    flex-direction: column;
+  .Hero .hero-data .row1,
+  .row2 {
+    text-align: center;
   }
-
-  .Courses .courses-section .courses-cards .card-info {
-    flex-direction: column;
-    gap: 5px;
+  .Hero .hero-section .hero-data .icon1 {
+    left: -0px;
+    top: -20px;
   }
-
+  .Hero a {
+    font-size: 14px;
+  }
+  .Hero .hero-buttons {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .images img {
+    width: calc((100% - 4px) / 3);
+    box-sizing: border-box;
+  }
   .Benefits .Benefits-section .Benefits-cards {
     flex-direction: column;
   }
-
-  footer .footer-section .start-end {
-    flex-direction: column;
-  }
-
-  footer .footer-section .start-end .end {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (min-width: 427px) and (max-width: 1025px) {
-  .images img {
-    width: calc((100% - 6px) / 4);
-  }
-
   .Benefits .Benefits-section .Benefits-cards .Benefit-card {
-    width: calc((100% - 20px) / 2);
+    width: 100%;
   }
-
-  .Courses .courses-section .courses-cards .Course-card .card-info {
+  .Courses .courses-section .courses-cards {
     flex-direction: column;
-    gap: 5px;
   }
-
+  .Courses .courses-section .courses-cards .card-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .Courses .courses-section .courses-cards .Course-card {
+    width: 100%;
+  }
+  .Testimonials .testimonials-section .testimonials-cards {
+    flex-direction: column;
+  }
+  .Testimonials .testimonials-cards .testimonial-card {
+    width: 100%;
+  }
+  .Testimonials .testimonials-cards .testimonial-card .card-info a {
+    font-size: 14px;
+    width: 100%;
+  }
+  .Testimonials .testimonials-cards .testimonial-card .card-info .data span {
+    font-size: 16px;
+  }
   .Testimonials .testimonials-cards .testimonial-card .card-info {
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    align-items: flex-start;
   }
-
+  .Pricing .pricing-section .pricing-info {
+    flex-direction: column;
+  }
+  .Pricing .pricing-section .pricing-info .buttons {
+    align-self: center;
+  }
+  .Pricing .pricing-section .pricing-cards {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .Pricing .pricing-section .pricing-cards .pricing-card {
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+  }
   footer .footer-section .start-end {
     flex-direction: column;
   }
-
+  footer .footer-section .start-end .start {
+    width: 100%;
+  }
+  footer .footer-section .start-end .end {
+    width: 100%;
+  }
   footer .footer-section .start-end .end .item {
-    width: calc((100% - 30px) / 2);
+    width: fit-content;
   }
 }
